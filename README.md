@@ -68,6 +68,7 @@ pip install -v -e .
 **Step 4.** Prepare dataset follow the [official instructions](https://mmdetection.readthedocs.io/en/3.x/user_guides/dataset_prepare.html).
 
 
+**Step 5.** Please download the pretrained GLIP-Tiny model weights from [Hugging Face](https://huggingface.co/GLIPModel/GLIP/blob/main/glip_tiny_model_o365_goldg_cc_sbu.pth) and save them to the **checkpoint** directory.
 
 ### 2. Training
 
