@@ -5,7 +5,7 @@
 This repository contains the official implementation of the following paper:
 
 > **FusionKD: Fusion Knowledge Distillation of Vision-Language Foundation Model for Strip Steel Surface Defect Detection**<br>
-> [Jiaojiao Su](https://dblp.org/pid/278/9920.html)<sup></sup>, [Qiwu Luo](https://scholar.google.com.hk/citations?hl=zh-CN&user=cI6HFdwAAAAJ)<sup>\*</sup>, [Yibo Wang](https://scholar.google.com/citations?hl=zh-CN&tzom=-480&user=jkINzwMAAAAJ)<sup>\*</sup>，[Chunhua Yang](https://scholar.google.com.hk/citations?hl=zh-CN&user=39DpNi0AAAAJ), [Weihua Gui](https://dblp.org/pid/71/2277-1.html), [Janne Heikkilä](https://scholar.google.com.hk/citations?hl=zh-CN&user=SCR4RY8AAAAJ)<sup></sup>  <br>
+> [Jiaojiao Su](https://dblp.org/pid/278/9920.html)<sup></sup>, [Qiwu Luo](https://scholar.google.com.hk/citations?hl=zh-CN&user=cI6HFdwAAAAJ)<sup>\*</sup>, [Yibo Wang](https://scholar.google.com/citations?hl=zh-CN&tzom=-480&user=jkINzwMAAAAJ)<sup>\*</sup>, [Chunhua Yang](https://scholar.google.com.hk/citations?hl=zh-CN&user=39DpNi0AAAAJ), [Weihua Gui](https://dblp.org/pid/71/2277-1.html), [Janne Heikkilä](https://scholar.google.com.hk/citations?hl=zh-CN&user=SCR4RY8AAAAJ)<sup></sup>  <br>
 > (\* denotes equal contribution) <br>
 > School of Automation, Central South University <br>
 > Center for Machine Vision and Signal Analysis (CMVS),University of Oulu <br>
