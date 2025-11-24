@@ -54,7 +54,7 @@ mim install "mmengine==0.7.3"
 mim install "mmcv==2.0.0rc4"
 ```
 
-**Step 3.** Install [CrossKD](https://github.com/jbwang1997/CrossKD.git).
+**Step 3.** Install [FusionKD](https://github.com/Miss-Jo/FusionKD.git).
 
 ```shell
 git clone https://github.com/Miss-Jo/FusionKD
