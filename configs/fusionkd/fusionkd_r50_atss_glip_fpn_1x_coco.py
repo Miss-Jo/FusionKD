@@ -101,15 +101,15 @@ max_epochs =12#120 33
 train_cfg = dict(max_epochs=max_epochs, val_interval=1)
 
 # 自定义Hook配置
-custom_hooks = [
-    dict(
-        type='KDWeightUpdateHook',
-        update_interval=1,
-        strategy='adaptive'  # 可选: 'adaptive', 'cosine''performance_aware',
-    ),
-    dict(type='GradientCoordinatorHook'),
-    # 其他原有hooks...
-]
+# custom_hooks = [
+#     dict(
+#         type='KDWeightUpdateHook',
+#         update_interval=1,
+#         strategy='adaptive'  # 可选: 'adaptive', 'cosine''performance_aware',
+#     ),
+#     dict(type='GradientCoordinatorHook'),
+#     # 其他原有hooks...
+# ]
 
 # 学习率调度优化
 # param_scheduler = [
