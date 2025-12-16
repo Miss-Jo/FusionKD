@@ -64,11 +64,25 @@ pip install -v -e .
 # "-e" means installing a project in editable mode,
 # thus any local modifications made to the code will take effect without reinstallation.
 ```
+To facilitate your usage, I have packaged the environment and uploaded it to [FusionKD Env](https://drive.google.com/file/d/1vVenBlIBKZUIvjpyDtew05IQC0QHAtCH/view?usp=sharing).
+The steps to set it up are as follows:
+```shell
+# 1. Create the directory (if it doesn’t exist)
+  mkdir -p /miniconda3/envs/
+# 2.Extract to the conda environments directory
+  tar -xzf fusionkd.tar.gz -C /miniconda3/envs/
+# 3.Activate the environment
+  conda activate fusionkd
+# Note:​ Conda paths may vary across different systems:
+  Linux:​ /anaconda3/envs/or /miniconda3/envs/
+  Mac:​ /opt/anaconda3/envs/
+  Windows:​ C:\Users\anaconda3\envs\ or C:\Users\Miniconda3\envs
+```
 
 **Step 4.** Prepare dataset follow the [official instructions](https://mmdetection.readthedocs.io/en/3.x/user_guides/dataset_prepare.html).
 
 
-**Step 5.** Please download the pretrained GLIP-Tiny model weights from [Hugging Face](https://huggingface.co/GLIPModel/GLIP/blob/main/glip_tiny_model_o365_goldg_cc_sbu.pth) and save them to the **checkpoint** directory.
+**Step 5.** Please download the pretrained GLIP-Tiny model weights from [Hugging Face](https://huggingface.co/GLIPModel/GLIP/blob/main/glip_tiny_model_o365_goldg_cc_sbu.pth) or [Google Drive](https://drive.google.com/file/d/1HlaAK_B1HttQimzfVR_l8wOW6-hBMO_S/view?usp=sharing) and save them to the **checkpoint** directory.
 
 ### 2. Training
 
