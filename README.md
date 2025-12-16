@@ -95,7 +95,7 @@ The steps to set it up are as follows:
     (220, 20, 60), (119, 11, 32), (0, 0, 142), (0, 0, 230), (106, 0, 228), (0, 60, 100)
 ]
 ```
-2. Modify Text Prompts in [glip.py](https://github.com/Miss-Jo/FusionKD/blob/main/mmdet/models/detectors/glip.py):
+2. Modify Text Prompts in [glip.py](https://github.com/Miss-Jo/FusionKD/blob/main/mmdet/models/detectors/glip.py)
 ```shell
 # Around line 428 in glip.py, you'll need to modify text prompts like:
 text_prompt = "your_class1, your_class2, your_class3, ..."
