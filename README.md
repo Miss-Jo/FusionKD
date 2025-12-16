@@ -79,9 +79,27 @@ The steps to set it up are as follows:
   Windows:​ C:\Users\anaconda3\envs\ or C:\Users\Miniconda3\envs
 ```
 
-**Step 4.** Prepare dataset follow the [official instructions](https://mmdetection.readthedocs.io/en/3.x/user_guides/dataset_prepare.html).
-
-
+**Step 4.** Prepare dataset follow the [official instructions](https://mmdetection.readthedocs.io/en/3.x/user_guides/dataset_prepare.html). To use your own dataset, you need to modify two key components:
+1. Modify METAINFO in [coco.py](https://github.com/Miss-Jo/FusionKD/blob/main/mmdet/datasets/coco.py)
+ ```shell
+# In the CocoDatasetclass, update the METAINFOdictionary with your custom classes:
+  METAINFO = {
+    'classes': ('your_class1', 'your_class2', 'your_class3', ...),
+    'palette': [
+        (r1, g1, b1), (r2, g2, b2), (r3, g3, b3), ...
+    ]
+}
+#Example from the existing code:
+'classes': ('crazing', 'inclusion', 'patches', 'pitted_surface', 'rolled-in_scale', 'scratches'),
+'palette': [
+    (220, 20, 60), (119, 11, 32), (0, 0, 142), (0, 0, 230), (106, 0, 228), (0, 60, 100)
+]
+```
+2. Modify Text Prompts in [glip.py](https://github.com/Miss-Jo/FusionKD/blob/main/mmdet/models/detectors/glip.py):
+```shell
+# Around line 428 in glip.py, you'll need to modify text prompts like:
+text_prompt = "your_class1, your_class2, your_class3, ..."
+```
 **Step 5.** Please download the pretrained GLIP-Tiny model weights from [Hugging Face](https://huggingface.co/GLIPModel/GLIP/blob/main/glip_tiny_model_o365_goldg_cc_sbu.pth) or [Google Drive](https://drive.google.com/file/d/1HlaAK_B1HttQimzfVR_l8wOW6-hBMO_S/view?usp=sharing) and save them to the **checkpoint** directory.
 
 ### 2. Training
